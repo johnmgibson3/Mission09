@@ -27,6 +27,12 @@ function Welcome()
 }
 
 
+function Teams() {
+  return (
+      <h2>Teams Competing:</h2>
+  );
+}
+
 function TeamCard({ school, name, city, state }: Team) {
   return (
     <div className="card">
@@ -58,6 +64,7 @@ function App() {
     {/* Curly braces let you pass info into  */}
       
       <Welcome/>
+      <Teams/>
       <TeamList/>
 
 
